@@ -10,6 +10,24 @@
   <link rel="stylesheet" href="media.css">
 </head>
 <body>
+
+
+<!-- Sliding Login Panel -->
+<div id="loginPanel" class="login-panel">
+  <div class="login-header">
+    <h2>Login</h2>
+    <span id="closeLogin" class="close-btn">&times;</span>
+  </div>
+  <form>
+    <label>Email</label>
+    <input type="email" placeholder="Enter Email" required>
+    <label>Password</label>
+    <input type="password" placeholder="Enter Password" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
   
 <section class="responsive-header-section">
   <header class="mobile-header">
@@ -17,7 +35,7 @@
       <img src="images/Spotify_Primary_Logo_RGB_White.png" alt="Logo" />
     </div>
     <div class="mobile-header-right">
-      <button class="menu-btn">Log In</button>
+      <button class="menu-btn" id="loginBtn">Log In</button>
     </div>
   </header>
 </section>
@@ -461,5 +479,7 @@
     <h5>Profile</h5>
   </div>
 </footer>  
+
 </body>
+<script src="app.js"></script>
 </html>
