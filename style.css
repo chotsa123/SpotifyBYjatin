@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+/* ----------------------------------------------------------------------------------ONLY RESPONSIVE HEADER DISPLAY NONE-- ------------------*/
+
+.responsive-header-section{
+  display: none;
+}
+.mobile-footer{
+  display: none;
+}
+/* ----------------------------------------------------------------------------------MAIN HEADER  ------------------------------------------*/
+.main-header {
+  width: 100%;
+  padding: 13px 30px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+}
+
+/* Header Left */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-left-left img{
+  height: 32px;
+}
+
+/* Header-left-right (Home + Search) */
+.header-left-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-btn {
+  background:#232323;
+  border-radius: 50%;
+  padding: 12px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.icon-btn i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom-in effect on icon hover except search */
+.icon-hover:hover {
+  transform: scale(1.3);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.search-bar i.search-icon {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  width: 350px;
+}
+
+.search-bar .vertical-line {
+  width: 0.4px;
+  height: 20px;
+  background-color: gray;
+  margin: 0 10px;
+}
+
+/* Header Right */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-left li,
+.nav-right li {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-right li i {
+  margin-right: 6px;
+  transition: transform 0.3s ease;
+}
+
+.nav-left li:hover,
+.nav-right li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Icons hover zoom-in (already applied) */
+.icon-btn i:hover,
+.nav-right li i:hover,
+.login-btn:hover {
+  transform: scale(1.2);
+}
+
+
+.header-right .vertical-line {
+  width: 0.4px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Login Button */
+.login-btn {
+  padding: 6px 14px;
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Zoom-in for icons */
+.icon-btn i:hover,
+.nav-right li i:hover,
+.login-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ----------------------------------------------------------------------------------MAIN section with back  ---------------------------*/
+
+.main-background {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 75px;
+}
+/* ----------------------------------------------------------------------------------MAIN section left side   ---------------------------*/
+
+/* Left Section */
+.main-background-left {
+  flex-basis: 28%;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;  
+  margin:0px 10px;
+}
+
+/* Fixed Header */
+.left-header {
+  width: 100%;
+  background-color: #222;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+  
+}
+
+.scroll-content-left {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+  height:280px;
+  background-color: #222;
+}
+
+.scroll-block {
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 8px;
+  background: #1a1a1a;
+}
+
+.scroll-block h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.scroll-block p {
+  margin-bottom: 10px;
+}
+
+.scroll-block button {
+  padding: 8px 12px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* List Items */
+.left-list {
+  padding: 20px 10px;
+  background-color: #222;
+  font-size: 12px;
+  
+}
+
+.left-list ul {
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.left-list li {
+  list-style: none;
+  padding: 5px 0;
+  color: whitesmoke;
+  margin-right: 30px;
+}
+
+/* Bottom Button */
+.left-bottom-btn {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #222;
+  border-radius:0px 0px 10px 10px;
+}
+
+.left-bottom-btn button {
+  width: 35%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: 0.5px white solid;
+  border-radius: 30px;
+}
+
+
+/* ----------------------------------------------------------------------------------MAIN section right side ---------------------------*/
+/* Right Section */
+.main-background-right {
+  flex-basis: 70%;
+  background-color: #121212;
+  overflow-y: scroll;
+  border-radius: 10px;
+  margin:0px 10px;
+  height:540px;
+}
+
+.right-scroll-container {
+  padding: 30px;
+}
+
+.right-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.right-section-rows{
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bottom-row {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.top-row h1 {
+  color: white;
+}
+.top-row h2 a {
+  color:#969696;
+  font-size: 10px;
+}
+.top-row h2 a:hover {
+  color:#969696;
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  flex-basis: 17%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card h5 {
+  margin: 10px 0px 20px 20px  ;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.card p {
+  font-size: 10px;
+  color: #969696;
+  margin: 10px 0px 20px 20px  ;
+  transition: color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #333333;
+}
+
+.thin-line {
+  width: 100%;
+  height: 0.1px;       
+  background-color: #ccc; 
+  border: none;           
+  margin: 50px 0;         
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------right side sectioon bottom side footer ---------------*/
+.footer-content {
+  width: 100%;
+  padding: 0px 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  width: 70%;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.footer-column ul li {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: #1DB954;
+  text-decoration: underline;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.footer-right i {
+  display: flex;
+  width: 40px ;
+  height: 40px;
+  cursor: pointer;
+  transition: color 0.3s;
+  background-color:#727272;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right i:hover {
+  color: #1DB954;
+}
+
+.copyright-text {
+  text-align: left;
+  font-size: 16px;
+  color: #aaa;
+  padding: 10px 0;
+}
+
+
+
+.main-web-mainfooter {
+  width: 100%;
+  display: flex;
+}
+
+.web-footer-content {
+  width: 100%;
+  justify-content: space-between;
+  background-color: #8659BF;
+  color: white;
+  display: flex;
+  margin: 8px 10px;
+  align-items: center;
+}
+
+.web-footer-left {
+  flex-basis: 70%;
+  flex-direction: column;
+  gap: 2px;
+  padding: 15px 20px ;
+}
+
+.web-footer-left h1 {
+  font-size: 14px;
+}
+
+.web-footer-left h2 {
+  font-size: 12px;
+  margin: 0;
+  color: #ccc;
+}
+
+.web-footer-right{
+  flex-basis: 30%;
+  display: flex;
+  justify-content: right;
+}
+
+.web-footer-right button {
+  padding: 8px 16px;
+  background-color: white;
+  margin-right: 10px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+}
+
+.web-footer-right button:hover {
+  background-color: #e4e4e4;
+}

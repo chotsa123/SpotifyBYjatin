@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpotifyWS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  
+<section class="responsive-header-section">
+  <header class="mobile-header">
+    <div class="mobile-header-left">
+      <img src="images/Spotify_Primary_Logo_RGB_White.png" alt="Logo" />
+    </div>
+    <div class="mobile-header-right">
+      <button class="menu-btn">Log In</button>
+    </div>
+  </header>
+</section>
+  
+
+
+
+
+  <header class="main-header">
+    <!-- Header Left -->
+    <div class="header-left">
+      <!-- Left part of header-left -->
+      <div class="header-left-left">
+        <img src="images/Spotify_Primary_Logo_RGB_White.png" alt="" />
+      </div>
+
+      <!-- Right part of header-left -->
+      <div class="header-left-right">
+        <button class="icon-btn">
+          <i class="fas fa-home"></i>
+        </button>
+
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search" />
+          <div class="vertical-line"></div>
+          <i class="fas fa-compass icon-hover"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Right -->
+    <div class="header-right">
+      <ul class="nav-left">
+        <li>Premium</li>
+        <li>Support</li>
+        <li>Download</li>
+      </ul>
+
+      <div class="vertical-line"></div>
+
+      <ul class="nav-right">
+        <li>
+          <i class="fas fa-download icon-hover"></i> Install App
+        </li>
+        <li>Sign Up</li>
+      </ul>
+
+      <button class="login-btn">Log In</button>
+    </div>
+  </header>
+
+
+
+  <section class="main-background">
+
+    <!-- Left Section -->
+    <div class="main-background-left">
+
+      <!-- Fixed Header -->
+      <header class="left-header">
+        <h1>My App</h1>
+        <i class="fas fa-plus"></i>
+      </header>
+
+      <!-- Scrollable Content -->
+      <div class="scroll-content-left">
+        <div class="scroll-block">
+          <h1>Block 1</h1>
+          <p>Some description text goes here.</p>
+          <button>Click Me</button>
+        </div>
+        <div class="scroll-block">
+          <h1>Block 2</h1>
+          <p>Another description here.</p>
+          <button>Click Me</button>
+        </div>
+        <div class="scroll-block">
+          <h1>Block 3</h1>
+          <p>Details for the third block.</p>
+          <button>Click Me</button>
+        </div>
+        <div class="scroll-block">
+          <h1>Block 4</h1>
+          <p>Final block's content here.</p>
+          <button>Click Me</button>
+        </div>
+        <div class="scroll-block">
+          <h1>Block 4</h1>
+          <p>Final block's content here.</p>
+          <button>Click Me</button>
+        </div>
+        <div class="scroll-block">
+          <h1>Block 4</h1>
+          <p>Final block's content here.</p>
+          <button>Click Me</button>
+        </div>
+      </div>
+
+      <!-- List Section -->
+      <div class="left-list">
+        <ul>
+          <li>Legal </li>
+          <li>Safety & Privacy Cemter</li>
+          <li>Privacy Plicy</li>
+          <li>Cokies</li>
+        </ul>
+        <ul>
+          <li>About Ads</li>
+          <li>Accessibility</li>
+        </ul>
+        <ul>
+          <li>Cookies</li>
+        </ul>
+      </div>
+
+      <!-- Bottom Button -->
+      <div class="left-bottom-btn">
+        <button><i class="fa-regular fa-globe"></i> Bottom Left</button>
+      </div>
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="main-background-right">
+
+      <!-- Main Container with Scroll -->
+      <div class="right-scroll-container">
+
+        <!-- Repeatable Section -->
+        <div class="right-section">
+         
+          <div class="right-section-rows">  
+            <!-- Top Row -->
+            <div class="top-row">
+              <h1>Trending Song</h1>
+              <h2><a href="">Show all</a></h2>
+            </div>
+            <!-- Bottom Grid -->
+            <div class="bottom-row">
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Todo na</h5>
+                <p>Song . bela shende, ash king</p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Saiyaara</h5>
+                <p>video . Tanishk bagchi </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Sahiba </h5>
+                <p>Adiya Rikhari </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Barbaad</h5>
+                <p>Video . The Rish,</p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Ho To </h5>
+                <p>Song . Vishal Mishra, Hansika Pareek,Raj</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-section-rows">  
+            <!-- Top Row -->
+            <div class="top-row">
+              <h1>Trending Song</h1>
+              <h2><a href="">Show all</a></h2>
+            </div>
+            <!-- Bottom Grid -->
+            <div class="bottom-row">
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Todo na</h5>
+                <p>Song . bela shende, ash king</p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Saiyaara</h5>
+                <p>video . Tanishk bagchi,Faheem Abdullah </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Sahiba </h5>
+                <p>Adiya Rikhari </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Barbaad</h5>
+                <p>Video . The Rish,Jubin Nautiyal </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Ho To </h5>
+                <p>Song . Vishal Mishra, Hansika Pareek,Raj</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-section-rows">  
+            <!-- Top Row -->
+            <div class="top-row">
+              <h1>Trending Song</h1>
+              <h2><a href="">Show all</a></h2>
+            </div>
+            <!-- Bottom Grid -->
+            <div class="bottom-row">
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Todo na</h5>
+                <p>Song . bela shende, ash king</p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Saiyaara</h5>
+                <p>video . Tanishk bagchi,Faheem Abdullah </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Sahiba </h5>
+                <p>Adiya Rikhari </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Barbaad</h5>
+                <p>Video . The Rish,Jubin Nautiyal </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Ho To </h5>
+                <p>Song . Vishal Mishra, Hansika Pareek,Raj</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-section-rows">  
+            <!-- Top Row -->
+            <div class="top-row">
+              <h1>Trending Song</h1>
+              <h2><a href="">Show all</a></h2>
+            </div>
+            <!-- Bottom Grid -->
+            <div class="bottom-row">
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Todo na</h5>
+                <p>Song . bela shende, ash king</p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Saiyaara</h5>
+                <p>video . Tanishk bagchi,Faheem Abdullah </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Sahiba </h5>
+                <p>Adiya Rikhari </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Barbaad</h5>
+                <p>Video . The Rish,Jubin Nautiyal </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Ho To </h5>
+                <p>Song . Vishal Mishra, Hansika Pareek,Raj</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-section-rows">  
+            <!-- Top Row -->
+            <div class="top-row">
+              <h1>Trending Song</h1>
+              <h2><a href="">Show all</a></h2>
+            </div>
+            <!-- Bottom Grid -->
+            <div class="bottom-row">
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Todo na</h5>
+                <p>Song . bela shende, ash king</p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Saiyaara</h5>
+                <p>video . Tanishk bagchi,Faheem Abdullah </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Sahiba </h5>
+                <p>Adiya Rikhari </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Barbaad</h5>
+                <p>Video . The Rish,Jubin Nautiyal </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Ho To </h5>
+                <p>Song . Vishal Mishra, Hansika Pareek,Raj</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-section-rows">  
+            <!-- Top Row -->
+            <div class="top-row">
+              <h1>Trending Song</h1>
+              <h2><a href="">Show all</a></h2>
+            </div>
+            <!-- Bottom Grid -->
+            <div class="bottom-row">
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Todo na</h5>
+                <p>Song . bela shende, ash king</p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Saiyaara</h5>
+                <p>video . Tanishk bagchi,Faheem Abdullah </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Sahiba </h5>
+                <p>Adiya Rikhari </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Barbaad</h5>
+                <p>Video . The Rish,Jubin Nautiyal </p>
+              </div>
+              <div class="card">
+                <img src="images/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpeg" alt="Image">
+                <h5>Tum Ho To </h5>
+                <p>Song . Vishal Mishra, Hansika Pareek,Raj</p>
+              </div>
+            </div>
+          </div>
+           
+          <hr class="thin-line">
+        
+      <section class="footer-content">
+          <!-- Left Side with 4 h2 + ul columns -->
+          <div class="footer-left">
+            <div class="footer-column">
+              <h2>Company</h2>
+              <ul>
+                <li>About</li>
+                <li>Jobs</li>
+                <li>Press</li>
+                <li>News</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h2>Products</h2>
+              <ul>
+                <li>App</li>
+                <li>Web Player</li>
+                <li>Premium</li>
+                <li>Download</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h2>Support</h2>
+              <ul>
+                <li>Help</li>
+                <li>Contact</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h2>Community</h2>
+              <ul>
+                <li>For Artists</li>
+                <li>Developers</li>
+                <li>Advertising</li>
+                <li>Investors</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Side with Icons -->
+          <div class="footer-right">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+          </div>
+      </section>
+      <hr class="thin-line">
+      <figure>
+        <figcaption class="copyright-text">© 2025 Spotify AB</figcaption>
+      </figure>
+
+
+        
+        
+        
+    </div>
+    </div>
+
+  </section>
+
+  <section class="main-web-mainfooter">
+    <div class="web-footer-content">
+      <div class="web-footer-left">
+        <h1>Main Footer Heading</h1>
+        <h2>Sign up to get unlimited songs and prodcasts with occasional ads. No credit card needed.</h2>
+      </div>
+      <div class="web-footer-right">
+        <button>Sign up free</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+ 
+
+
+<footer class="mobile-footer">
+  <div class="footer-btn">
+    <i class="fas fa-home"></i>
+    <h5>Home</h5>
+  </div>
+  <div class="footer-btn">
+    <i class="fas fa-search"></i>
+    <h5>Search</h5>
+  </div>
+  <div class="footer-btn">
+    <i class="fas fa-music"></i>
+    <h5>Library</h5>
+  </div>
+  <div class="footer-btn">
+    <i class="fas fa-user"></i>
+    <h5>Profile</h5>
+  </div>
+</footer>  
+</body>
+</html>
